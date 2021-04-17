@@ -6,10 +6,13 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import Detalhes from './pages/Detalhes';
+import Menu from "./components/Menu";
 
 function App() {
   return (
     <Router>
+
+      <Menu />
         <Switch>
           <Route path="/details">
             <Detalhes />
