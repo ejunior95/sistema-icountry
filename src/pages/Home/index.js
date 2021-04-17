@@ -4,7 +4,7 @@ import { Container } from './styles';
 function Home() {
   return(
       <Container>
-          
+          <div></div>
       </Container>
   );
 }
