@@ -17,11 +17,11 @@ function FlagCarousel() {
                     <FaChevronLeft />
                 </div>
 
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>4</p>
-                <p>5</p>
+                <p className="item-carousel active">1</p>
+                <p className="item-carousel">2</p>
+                <p className="item-carousel">3</p>
+                <p className="item-carousel">4</p>
+                <p className="item-carousel">5</p>
 
                 <div className="btn-next">
                     <FaChevronRight />
