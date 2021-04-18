@@ -1,12 +1,14 @@
 import React from 'react';
 import { Container } from './styles';
 
-function Detalhes() {
+function Home() {
   return(
       <Container>
-          
+          <div className="conteudo">
+            
+          </div>
       </Container>
   );
 }
 
-export default Detalhes;
+export default Home;
