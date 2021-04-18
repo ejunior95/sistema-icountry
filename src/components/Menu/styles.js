@@ -17,29 +17,35 @@ export const Container = styled.div`
     cursor: pointer;
   }
   .btn-voltar-menu {
-    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     border: 1px solid #6D2080;
     background-color: transparent;
-    color: #6D2080;
-    padding: 6px 12px 6px 12px;
+    padding: 6px 15px 6px 15px;
     cursor: pointer;
     margin-right: 3vh;
     box-shadow: 0px 5px 5px #BABABA;
-    .icone-btn-voltar {
-      padding-right: 5px;
-      color: #6D2080;
-    }
+    box-sizing: border-box;
   }
-
-
   .btn-voltar-menu:hover {
     background-color: #6D2080;
     color: #ffffff;
-  .icone-btn-voltar {
-    color: #ffffff;
+    .icone-btn-voltar {
+      color: #ffffff;
+    }
+    .text-btn-voltar {
+      color: #ffffff;
+    }
   }
-  }
+    .icone-btn-voltar {
+      padding-right: 5px;
+      font-size: 17px;
+      color: #6D2080;
+      transition: none;
+    }
+    .text-btn-voltar {
+      font-size: 17px;
+      color: #6D2080;
+    }
 `;

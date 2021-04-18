@@ -9,7 +9,7 @@ function Menu() {
           <img className="logo-menu" src={LogoMOVA} alt="Logo MOVA" />
           <div className="btn-voltar-menu">
             <MdKeyboardReturn className="icone-btn-voltar" />
-            Voltar
+            <p className="text-btn-voltar">Voltar</p>
           </div>
       </Container>
   );
