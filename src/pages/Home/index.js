@@ -15,9 +15,7 @@ function Home() {
                 </div>
               <CustomButton />
             </div>
-
           <FlagCarousel />
-        
           </div>
       </Container>
   );

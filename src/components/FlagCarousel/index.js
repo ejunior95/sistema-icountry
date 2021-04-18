@@ -9,7 +9,6 @@ function FlagCarousel() {
       <Container>
          <div className="container-flags">
             <Flag />
-            <Flag />
          </div>
          <div className="footer-carousel">
             <div className="container-controles">

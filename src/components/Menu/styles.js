@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+ @media (min-width: 501px) {
   position: fixed;
   left: 0;
   top: 0;
@@ -48,4 +49,40 @@ export const Container = styled.div`
       font-size: 17px;
       color: #6D2080;
     }
+ }
+ @media (max-width: 500px) {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 5px 12px #D1D1D1;
+
+  .logo-menu {
+    width: 12vh;
+    padding-left: 3vh;
+    cursor: pointer;
+  }
+  .btn-voltar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 6px 15px 6px 15px;
+    margin-right: 3vh;
+    box-sizing: border-box;
+  }
+    .icone-btn-voltar {
+      padding-right: 5px;
+      font-size: 25px;
+      color: #6D2080;
+      transition: none;
+    }
+    .text-btn-voltar {
+      display: none;
+    }
+ }
 `;
