@@ -19,9 +19,19 @@ function Menu() {
     }
   } 
 
+  function PagInicial() {
+    history.push("/home")
+  }
+
   return(
       <Container>
-          <img className="logo-menu" src={LogoMOVA} alt="Logo MOVA" />
+          <img 
+          className="logo-menu"
+          src={LogoMOVA} 
+          alt="Logo MOVA" 
+          onClick={PagInicial}
+          title="ICountry - Sistema de consulta de países" 
+          />
           
           <div className="btn-voltar-menu" onClick={ToggleLink}>
             <MdKeyboardReturn className="icone-btn-voltar" />

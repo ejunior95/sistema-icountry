@@ -13,7 +13,7 @@ function FlagCarousel() {
          <div className="footer-carousel">
             <div className="container-controles">
                 <div className="btn-back">
-                    <FaChevronLeft />
+                    <FaChevronLeft className="icon-btn" />
                 </div>
 
                 <p className="item-carousel active">1</p>
@@ -23,7 +23,7 @@ function FlagCarousel() {
                 <p className="item-carousel">5</p>
 
                 <div className="btn-next">
-                    <FaChevronRight />
+                    <FaChevronRight className="icon-btn" />
                 </div>
             </div>
          </div>

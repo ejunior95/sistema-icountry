@@ -34,6 +34,7 @@ export const Container = styled.div`
       border-radius: 5px;
       cursor: pointer;
   }
+ 
   .item-carousel {
       display:flex;
       align-items: center;
@@ -42,6 +43,11 @@ export const Container = styled.div`
       box-shadow: 0px 3px 3px #BABABA;
       border-radius: 5px;
       cursor: pointer;
+  }
+  .item-carousel:hover {
+      background-color: #6D2080;
+      color: #ffffff;
+      transition: .1s ease-in-out;
   }
   .item-carousel.active {
       background-color: #6D2080;
