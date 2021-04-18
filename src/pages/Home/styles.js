@@ -5,6 +5,9 @@ export const Container = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  .link {
+    text-decoration: none;
+  }
   @media (min-width: 501px) {
   .conteudo {
     width: 80%;

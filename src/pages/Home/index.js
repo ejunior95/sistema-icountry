@@ -3,6 +3,7 @@ import { Container } from './styles';
 import InputSelect from '../../components/InputSelect';
 import CustomButton from '../../components/CustomButton';
 import FlagCarousel from '../../components/FlagCarousel';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return(
@@ -13,7 +14,9 @@ function Home() {
                 <div className="container-inputs">
                   <InputSelect />
                 </div>
-              <CustomButton />
+                <Link to="/details" className="link">
+                  <CustomButton />
+                </Link>
             </div>
           <FlagCarousel />
           </div>
