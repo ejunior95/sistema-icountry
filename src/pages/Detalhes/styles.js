@@ -15,7 +15,20 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
   }
-  
+  .container-flag-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 35vh;
+  }
+  .info {
+    line-height: 35px;
+  }
+  .titulo-paises {
+    width: 100%;
+    text-align: left;
+  }
 }
   @media (max-width: 500px) {
   .conteudo {
