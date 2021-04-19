@@ -8,7 +8,9 @@ function FlagCarousel() {
   return(
       <Container>
          <div className="container-flags">
-            <Flag />
+            <Flag siglaPais="br" alt="Brasil"  />
+            <Flag siglaPais="jp" alt="Japão" />
+            <Flag siglaPais="de" alt="Alemanha" />
          </div>
          <div className="footer-carousel">
             <div className="container-controles">

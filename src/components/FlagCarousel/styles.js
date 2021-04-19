@@ -6,9 +6,10 @@ export const Container = styled.div`
   .container-flags {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 50vh;
+
   }
   .footer-carousel {
     width: 100%;
