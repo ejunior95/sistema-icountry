@@ -23,6 +23,7 @@ export const Container = styled.div`
     height: 35vh;
   }
   .info {
+    padding-left: 15px;
     line-height: 35px;
   }
   .titulo-paises {

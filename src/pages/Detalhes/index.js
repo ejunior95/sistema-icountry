@@ -43,13 +43,13 @@ function Detalhes() {
               <Flag url={paisPrincipal.flag} alt={paisPrincipal.name} />
               
                  <div className="container-info">
-                     <p className="info"><strong>Nome:</strong> {paisPrincipal.name}</p>
-                     <p className="info"><strong>Capital:</strong> {paisPrincipal.capital}</p>
-                     <p className="info"><strong>Região:</strong> {paisPrincipal.region}</p>
-                     <p className="info"><strong>Sub-região:</strong> {paisPrincipal.subregion}</p>
-                     <p className="info"><strong>População:</strong> {
+                     <p className="info"><strong>Nome: </strong> {paisPrincipal.name}</p>
+                     <p className="info"><strong>Capital: </strong> {paisPrincipal.capital}</p>
+                     <p className="info"><strong>Região: </strong> {paisPrincipal.region}</p>
+                     <p className="info"><strong>Sub-região: </strong> {paisPrincipal.subregion}</p>
+                     <p className="info"><strong>População: </strong> {
                      new Intl.NumberFormat('pt-BR').format(paisPrincipal.population)}</p>
-                     <p className="info"><strong>Línguas:</strong>{paisPrincipal.languages?.toString()}</p>
+                     <p className="info"><strong>Línguas: </strong>{paisPrincipal.languages?.toString()}</p>
                  </div>
               </div>
              <h4 className="titulo-paises">Países vizinhos:</h4>  
