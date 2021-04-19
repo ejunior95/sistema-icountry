@@ -4,13 +4,13 @@ import { Container } from './styles';
 function Flag(props) {
   
   const {
-    siglaPais,
+    url,
     alt
   } = props
   
   return(
       <Container>
-          <img src={`https://flagcdn.com/${siglaPais}.svg`} alt={alt} />
+          <img src={url} alt={alt} />
       </Container>
   );
 }

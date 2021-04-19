@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   @media (min-width: 501px) {
-    width: 30%; 
+    width: 50vh;
+
     img {
       width: 100%;
       height: 100%;

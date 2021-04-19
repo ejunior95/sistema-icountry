@@ -8,9 +8,9 @@ function FlagCarousel() {
   return(
       <Container>
          <div className="container-flags">
-            <Flag siglaPais="br" alt="Brasil"  />
-            <Flag siglaPais="jp" alt="Japão" />
-            <Flag siglaPais="de" alt="Alemanha" />
+            <Flag url="https://restcountries.eu/data/bra.svg" alt="Brasil"  />
+            <Flag url="https://restcountries.eu/data/jpn.svg" alt="Japão" />
+            <Flag url="https://restcountries.eu/data/deu.svg" alt="Alemanha" />
          </div>
          <div className="footer-carousel">
             <div className="container-controles">

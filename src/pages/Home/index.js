@@ -10,6 +10,7 @@ function Home() {
   
   const [filtro, setFiltro] = useState('')
   const [filtro2, setFiltro2] = useState('')
+  const [responseAPI, setResponseAPI] = useState('')
   const [regioes,] = useState([
     {
       option: "Europa",
@@ -44,6 +45,7 @@ function Home() {
     
     api.get("all")
     .then(response => {
+      setResponseAPI(response.data)
       const _capitais = []
       const _linguas = []
       const _paises = []
@@ -66,15 +68,17 @@ function Home() {
        })
 
 
-       _codsligacao.push(
-         ...data.callingCodes
-       )
+       data.callingCodes.map(code => {
+        const codeInteger = parseInt(code)
+        const codeExistente =  _codsligacao.find(codelig => codelig === codeInteger);
+        if (!codeExistente && !isNaN(codeInteger)) _codsligacao.push({option: codeInteger, value: codeInteger})
+     })
 
       })
       setCapitais(_capitais)
       setLinguas(_linguas)
       setPaises(_paises)
-      setCodsLigacao(_codsligacao)
+      setCodsLigacao(_codsligacao.sort((a, b) => a - b))
     })
   },[])
 
@@ -95,10 +99,7 @@ function Home() {
   if (filtro === "capital") options2 = capitais
   if (filtro === "lingua") options2 = linguas
   if (filtro === "pais") options2 = paises
-  if (filtro === "codligacao") options2 = codsligacao.map(codligacao => ({
-    option: codligacao,
-    value: codligacao
-  }))
+  if (filtro === "codligacao") options2 = codsligacao
 
   return(
       <Container>
@@ -119,7 +120,10 @@ function Home() {
                   />
                   }
                 </div>
-                <Link to="/details" className="link">
+                <Link to={{
+                    pathname: '/details',
+                    state: { filtro, filtro2, responseAPI }
+                }} className="link">
                   <CustomButton />
                 </Link>
             </div>
