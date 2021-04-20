@@ -7,10 +7,12 @@ import { Link } from 'react-router-dom';
 import { api } from '../../services/api';
 
 function Home() {
-  
+
   const [filtro, setFiltro] = useState('')
   const [filtro2, setFiltro2] = useState('')
-  const [responseAPI, setResponseAPI] = useState('')
+  const [responseAPI, setResponseAPI] = useState([])
+  const [paisesSorteados, setPaisesSorteados] = useState([])
+
   const [regioes,] = useState([
     {
       option: "Europa",
@@ -81,7 +83,7 @@ function Home() {
       _codsligacao.sort((a, b) => a - b)
       setCodsLigacao(_codsligacao)
 
-      console.log(_codsligacao)
+      
 
     })
   },[])
@@ -89,7 +91,25 @@ function Home() {
   useEffect(() => {
     setFiltro2('')
   },[filtro])
-  
+
+
+  useEffect(() => {
+    function sortearNum(final) {
+      return Math.floor(Math.random() * final)
+    }
+    
+    const sorteio = [
+      sortearNum(responseAPI.length),
+      sortearNum(responseAPI.length),
+      sortearNum(responseAPI.length),
+    ]
+
+    setPaisesSorteados(responseAPI)
+     
+
+  },[responseAPI])
+
+
   const options = [
   {option: "Região", value: "regiao"},
   {option: "Capital", value: "capital"},
@@ -133,7 +153,7 @@ function Home() {
                 </Link>
                 }
             </div>
-          <FlagCarousel />
+          <FlagCarousel paises={paisesSorteados}/>
           </div>
       </Container>
   );

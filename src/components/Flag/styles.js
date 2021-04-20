@@ -6,8 +6,7 @@ export const Container = styled.div`
     max-width: 50vh;
     box-sizing: border-box;
     img {
-      width: 100%;
-      height: 100%;
+      max-height: 250px;
       box-shadow: 0px 3px 3px #BABABA;
     }
   }
