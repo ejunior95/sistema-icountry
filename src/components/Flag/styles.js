@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+ cursor: pointer;
   @media (min-width: 501px) {
-    width: 50vh;
-
+    max-width: 50vh;
+    box-sizing: border-box;
     img {
       width: 100%;
       height: 100%;

@@ -9,14 +9,7 @@ function Menu() {
   let history = useHistory()
   let location = useLocation()
   function ToggleLink() {
-
-    if (location.pathname === '/home') {
-      history.push("/details")
-    } else if (location.pathname === '/details') {
-      history.push("/home")
-    } else {
-      history.push("/home")
-    }
+    history.goBack()
   } 
 
   function PagInicial() {

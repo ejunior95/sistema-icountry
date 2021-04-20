@@ -5,12 +5,13 @@ function Flag(props) {
   
   const {
     url,
-    alt
+    alt,
+    title
   } = props
   
   return(
       <Container>
-          <img src={url} alt={alt} />
+          <img src={url} alt={alt} title={title} />
       </Container>
   );
 }

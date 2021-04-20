@@ -20,7 +20,8 @@ export const Container = styled.div`
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    height: 35vh;
+    height: 30vh;
+    box-sizing: border-box;
   }
   .info {
     padding-left: 15px;
@@ -29,6 +30,7 @@ export const Container = styled.div`
   .titulo-paises {
     width: 100%;
     text-align: left;
+    margin-top: 3vh;
   }
 }
   @media (max-width: 500px) {

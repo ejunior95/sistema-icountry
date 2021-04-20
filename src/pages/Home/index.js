@@ -54,7 +54,7 @@ function Home() {
       
         _capitais.push({
           option: data.capital,
-          value: `${data.alpha2Code}-${data.capital}`
+          value: data.capital
         })
 
         data.languages.map(lang => {
@@ -64,7 +64,7 @@ function Home() {
 
        _paises.push({
          option: data.name,
-         value: data.alpha2Code
+         value: data.name
        })
 
 
@@ -120,14 +120,16 @@ function Home() {
                   />
                   }
                 </div>
+                {filtro2 !== '' &&
                 <Link to={{
-                    pathname: '/details',
-                    state: { filtro, filtro2, responseAPI }
+                  pathname: '/details',
+                  state: { filtro, filtro2, responseAPI }
                 }} className="link">
                   <CustomButton />
                 </Link>
+                }
             </div>
-          <FlagCarousel />
+          <FlagCarousel state={filtro, filtro2} />
           </div>
       </Container>
   );
