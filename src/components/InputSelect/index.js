@@ -9,7 +9,7 @@ function InputSelect(props) {
     options,
     onChange
   } = props
-
+  console.log(options)
   return(
       <Container>
           <label for={label}>{label}</label>

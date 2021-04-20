@@ -75,10 +75,14 @@ function Home() {
      })
 
       })
-      setCapitais(_capitais)
+      setCapitais(_capitais.filter(capital => capital.option))
       setLinguas(_linguas)
       setPaises(_paises)
-      setCodsLigacao(_codsligacao.sort((a, b) => a - b))
+      _codsligacao.sort((a, b) => a - b)
+      setCodsLigacao(_codsligacao)
+
+      console.log(_codsligacao)
+
     })
   },[])
 
@@ -129,7 +133,7 @@ function Home() {
                 </Link>
                 }
             </div>
-          <FlagCarousel state={filtro, filtro2} />
+          <FlagCarousel />
           </div>
       </Container>
   );

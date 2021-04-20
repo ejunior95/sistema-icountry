@@ -9,13 +9,23 @@ function Detalhes() {
     
     const location = useLocation();
     const [pais, setPais] = useState([]);
+    const [paisesVizinhos, setPaisesVizinhos] = useState([]);
+
+    const {
+        filtro,
+        filtro2,
+        responseAPI
+    } = location.state
+
+    
+    function carregarBandeiras(paisSelecionado) {
+    
+        const _pais = responseAPI.find(res => res.name === paisSelecionado.name)
+        const _paisesVizinhos = _pais.borders.map(border => responseAPI.find(paisSelect => paisSelect.alpha3Code === border))
+        setPaisesVizinhos(_paisesVizinhos)
+    }
 
     useEffect(() => {
-        
-        const {
-            filtro,
-            filtro2
-        } = location.state
 
         console.log(filtro, filtro2)
             
@@ -30,8 +40,9 @@ function Detalhes() {
                     population: pais.population,
                     languages: pais.languages.map(language => language.nativeName),
                     flag: pais.flag
-                }))
+                }))[0]
                 setPais(_region)
+                carregarBandeiras(_region)
             })
         }
         if (filtro === "capital") {
@@ -45,8 +56,9 @@ function Detalhes() {
                     population: pais.population,
                     languages: pais.languages.map(language => language.nativeName),
                     flag: pais.flag
-                }))
+                }))[0]
                 setPais(_capital)
+                carregarBandeiras(_capital)
             })
         }
         if (filtro === "lingua") {
@@ -60,8 +72,9 @@ function Detalhes() {
                     population: pais.population,
                     languages: pais.languages.map(language => language.nativeName),
                     flag: pais.flag
-                }))
+                }))[0]
                 setPais(_lang)
+                carregarBandeiras(_lang)
             })
         }
         if (filtro === "pais") {
@@ -75,8 +88,9 @@ function Detalhes() {
                     population: pais.population,
                     languages: pais.languages.map(language => language.nativeName),
                     flag: pais.flag
-                }))
+                }))[0]
                 setPais(_pais)
+                carregarBandeiras(_pais)
             })
         }
         if (filtro === "codligacao") {
@@ -90,14 +104,15 @@ function Detalhes() {
                     population: pais.population,
                     languages: pais.languages.map(language => language.nativeName),
                     flag: pais.flag
-                }))
+                }))[0]
                 setPais(_codligacao)
+                carregarBandeiras(_codligacao)
             })
         }
 
     },[])
    
-    const paisPrincipal = pais[0] || {}
+    const paisPrincipal = pais || {}
 
   return(
       <Container>
@@ -117,7 +132,9 @@ function Detalhes() {
                  
               </div>
              <h4 className="titulo-paises">Países vizinhos:</h4>  
-             <FlagCarouselMini />
+             <FlagCarouselMini paisesVizinhos={
+                 paisesVizinhos
+             }/>
           </div>
       </Container>
   );
