@@ -29,6 +29,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  margin-bottom: 2vh;
   label {
     padding-left: 5px;
     padding-bottom: 3px;

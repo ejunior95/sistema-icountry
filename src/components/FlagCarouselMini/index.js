@@ -4,7 +4,7 @@ import Flag from '../Flag';
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 
-function FlagCarousel(props) {
+function FlagCarouselMini(props) {
     
      const [pagAtual, setPagAtual] = useState(1)
 
@@ -62,4 +62,4 @@ function FlagCarousel(props) {
   );
 }
 
-export default FlagCarousel;
+export default FlagCarouselMini;

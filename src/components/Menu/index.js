@@ -7,7 +7,7 @@ import { useLocation, useHistory } from 'react-router-dom';
 function Menu() {
 
   let history = useHistory()
-  let location = useLocation()
+  
   function ToggleLink() {
     history.goBack()
   } 

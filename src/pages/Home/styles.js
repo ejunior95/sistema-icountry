@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding-top: 12vh;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -9,6 +8,7 @@ export const Container = styled.div`
     text-decoration: none;
   }
   @media (min-width: 501px) {
+  padding-top: 12vh;
   .conteudo {
     width: 80%;
     height: 88vh;
@@ -31,9 +31,10 @@ export const Container = styled.div`
   }
 }
   @media (max-width: 500px) {
+    margin-top: 50vh;
   .conteudo {
     width: 80%;
-    height: 88vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,9 +43,10 @@ export const Container = styled.div`
   .container-pesquisa {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
     justify-content: flex-end;
+    padding-bottom: 5vh;
   }
   .container-inputs {
     display: flex;
@@ -52,7 +54,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: start;
     width: 100%;
-    padding-bottom: 2vh;
+    padding-bottom: 5vh;
   }
 }
 `;

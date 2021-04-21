@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+background-color: #ffffff;
  @media (min-width: 501px) {
   position: fixed;
   left: 0;
@@ -71,12 +72,15 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    padding: 6px 15px 6px 15px;
+    padding: 1vh 1vh 1vh 1vh;
     margin-right: 3vh;
     box-sizing: border-box;
+    cursor: pointer;
+  }
+  .btn-voltar-menu:active {
+    border: 2px solid #6D2080;
   }
     .icone-btn-voltar {
-      padding-right: 5px;
       font-size: 25px;
       color: #6D2080;
       transition: none;

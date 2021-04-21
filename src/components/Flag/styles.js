@@ -3,16 +3,23 @@ import styled from 'styled-components';
 export const Container = styled.div`
  cursor: pointer;
   @media (min-width: 501px) {
-    max-width: 50vh;
     box-sizing: border-box;
+    max-width: 300px;
+      max-height: 200px;
     img {
-      max-height: 250px;
+      height: 100%;
+      width: 100%;
       box-shadow: 0px 3px 3px #BABABA;
     }
   }
   @media (max-width: 500px) {
-  width: 100%;
-  height: 30vh;
-  background-color: blue;
+    box-sizing: border-box;
+    max-width: 100%;
+    
+    img {
+      height: 100%;
+      width: 100%;
+      box-shadow: 0px 3px 3px #BABABA;
+    }
   }
 `;
