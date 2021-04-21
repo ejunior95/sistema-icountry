@@ -16,7 +16,7 @@
 
 ## 💻 Sobre o projeto
 
-O sistema Icountry - é uma de conhecer mais sobre as diversas nações do mundo, sem sair de casa! Capital, língua nativa, população, código de ligações e várias outras informações podem ser pesquisadas nesta aplicação.
+O sistema Icountry - é uma forma de conhecer mais sobre as diversas nações do mundo, sem sair de casa! Capital, língua nativa, população, código de ligações e várias outras informações podem ser pesquisadas nesta aplicação.
 
 A fonte de todos os dados trazidos pelo sistema é a api [REST Countries](https://restcountries.eu/)
 
