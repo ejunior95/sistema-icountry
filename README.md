@@ -2,7 +2,8 @@
 
 <a href="https://github.com/ejunior95/sistema-icountry/stargazers"><img alt="Stargazers" src="https://img.shields.io/github/stars/ejunior95/sistema-icountry?style=social"></a>
 </p>
-[![Sistema Icountry](http://sistema-icountry.herokuapp.com/static/media/Logo-MOVA.c449e4b5.png "Sistema Icountry")](http://https://github.com/ejunior95/sistema-icountry "Sistema Icountry")
+
+![Logo-MOVA](https://user-images.githubusercontent.com/59847806/115499220-6f60f380-a245-11eb-8ee1-5fcb15ec48d1.png)
 
 <p>
   • <a href="#-sobre-o-projeto">Sobre</a>
@@ -32,13 +33,22 @@ Projeto desenvolvido durante o **Desafio** enviado pelo processo seletivo da [MO
 	- Ásia
 	- África
 	- Oceania
-- [x] Região: 
-	- Europa
-	- Américas
-	- Ásia
-	- África
-	- Oceania
-
+- [x] Capital: 
+	- Kabul
+	- Tirana
+	- Buenos Aires
+	- ...
+- [x] Língua: 
+	- Portuguese
+	- Russian
+	- English
+	- ...
+- [x] Pais: 
+	- Brazil
+	- Angola
+	- Cuba
+	- ...
+- [x] Código de ligação
 
 ---
 
