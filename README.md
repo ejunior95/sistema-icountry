@@ -59,6 +59,27 @@ O layout da aplicação está disponível no Figma:
   <img alt="Made by ejunior95" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
 </a>
 
+### Mobile
+
+<p style="display: flex; align-items: center; justify-content: space-evenly; width: 100%">
+  
+ ![image](https://user-images.githubusercontent.com/59847806/116494803-02b6ac00-a878-11eb-95ce-e14383c7f34d.png)![image](https://user-images.githubusercontent.com/59847806/116494829-0ea26e00-a878-11eb-8b2c-fff4c6abd4d3.png)
+
+
+</p>
+
+### Web
+
+<p style="display: flex; align-items: flex-start; justify-content: center;">
+
+![image](https://user-images.githubusercontent.com/59847806/116494712-c97e3c00-a877-11eb-8017-e6b65365e47d.png)
+![image](https://user-images.githubusercontent.com/59847806/116494741-e0bd2980-a877-11eb-8ed9-8b79b3b4c63e.png)
+
+
+</p>
+
+
+
 
 ### Pré-requisitos
 
